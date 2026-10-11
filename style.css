@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.navbar {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 72px;
+
+    padding: 0 3.2%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 10;
+
+    background: rgba(85, 84, 84, 0.22);
+}
+
+
+.nav-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.nav-left a {
+
+    color: #bdbbb5;
+
+    font-size: 9px;
+
+    font-weight: 400;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+
+.logo {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 18px;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+}
+
+.logo-main {
+
+    color: #ddd9d0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 18px;
+
+    line-height: 18px;
+
+    letter-spacing: 3px;
+}
+
+.logo-sub {
+
+    color: #99958d;
+
+    font-size: 5px;
+
+    letter-spacing: 3px;
+
+    margin-top: 1px;
+}
+
+
+.nav-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+.nav-right a {
+
+    color: #bdbbb5;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.consult-btn {
+
+    border: 1px solid #9d8145;
+
+    padding: 12px 17px;
+
+    color: #b89a58 !important;
+
+    font-size: 8px !important;
+
+    letter-spacing: 1.4px !important;
+
+    transition: 0.3s;
+}
+
+.consult-btn:hover {
+
+    background: #a4874b;
+
+    color: #ffffff !important;
+}
+
+
+
+.hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 570px;
+
+    overflow: hidden;
+
+    background-image: url("/images/room.bckground.jpeg");
+
+    background-size: cover;
+
+    background-position: 0.1% center;
+
+    display: flex;
+
+    align-items: flex-end;
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(rgba(15, 15, 15, 0.50),
+            rgba(15, 15, 15, 0.58));
+
+    z-index: 1;
+}
+
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    padding-left: 3.2%;
+
+    padding-bottom: 57px;
+}
+
+
+.hero-small-title {
+
+    color: #c2a35c;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 14px;
+}
+
+
+
+
+.hero h1 {
+
+    max-width: 600px;
+
+    color: #f5f2eb;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 49px;
+
+    font-weight: 400;
+
+    line-height: 1.08;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.hero p {
+
+    max-width: 470px;
+
+    color: #c3c0b8;
+
+    font-size: 10px;
+
+    line-height: 1.65;
+
+    margin-bottom: 23px;
+}
+
+
+
+.hero-btn {
+
+    display: inline-block;
+
+    border: 1px solid #a78948;
+
+    padding: 12px 17px;
+
+    color: #c0a35d;
+
+    font-size: 8px;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+
+    background: #a78948;
+
+    color: white;
+}
+
+
+
+.cookie-bar {
+
+    width: 100%;
+
+    min-height: 43px;
+
+    background: #111a2e;
+
+    padding: 8px 3%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.cookie-bar p {
+
+    color: #9fa4b0;
+
+    font-size: 8px;
+
+    line-height: 1.4;
+}
+
+
+.cookie-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.cookie-buttons button {
+
+    border: 0;
+
+    padding: 8px 12px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.decline {
+
+    background: #252e40;
+
+    color: #d2d4d8;
+}
+
+.accept {
+
+    background: #c5a548;
+
+    color: #ffffff;
+}
+
+
+
+.rooms {
+
+    width: 100%;
+
+    background: #080808;
+
+    padding: 37px 3.2% 30px;
+}
+
+
+
+
+.rooms-heading {
+
+    margin-bottom: 28px;
+}
+
+.rooms-heading h2 {
+
+    color: #eeeeee;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    margin-bottom: 8px;
+}
+
+.rooms-heading p {
+
+    color: #99968f;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+}
+
+
+.rooms-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 11px;
+}
+
+
+.room-card {
+
+    width: 100%;
+
+    height: 370px;
+
+    overflow: hidden;
+
+    background: #151515;
+}
+
+
+
+
+.room-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+
+
+.room-card:hover img {
+
+    transform: scale(1.04);
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .nav-left {
+        gap: 18px;
+    }
+
+    .nav-right {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero {
+        height: 530px;
+    }
+
+    .room-card {
+        height: 320px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        height: 62px;
+
+        padding: 0 18px;
+    }
+
+
+    .nav-left {
+
+        display: none;
+    }
+
+
+    .nav-right {
+
+        margin-left: auto;
+
+        gap: 0;
+    }
+
+
+    .nav-right a:not(.consult-btn) {
+
+        display: none;
+    }
+
+
+    .logo {
+
+        top: 15px;
+    }
+
+
+    .logo-main {
+
+        font-size: 15px;
+    }
+
+
+    .consult-btn {
+
+        padding: 9px 10px;
+
+        font-size: 6px !important;
+    }
+
+
+
+    .hero {
+
+        height: 610px;
+
+        background-position: center;
+    }
+
+
+    .hero-content {
+
+        padding: 0 20px 42px;
+    }
+
+
+    .hero-small-title {
+
+        font-size: 7px;
+
+        line-height: 1.5;
+
+        letter-spacing: 1.2px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .hero h1 {
+
+        max-width: 100%;
+
+        font-size: 38px;
+
+        line-height: 1.12;
+    }
+
+
+    .hero p {
+
+        font-size: 8px;
+
+        max-width: 95%;
+    }
+
+
+    .cookie-bar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+        padding: 10px 20px;
+    }
+
+
+    .cookie-bar p {
+
+        font-size: 7px;
+    }
+
+
+
+    .rooms {
+
+        padding: 28px 20px 50px;
+    }
+
+
+    .rooms-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .room-card {
+
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .hero {
+
+        height: 570px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 29px;
+    }
+
+
+    .room-card {
+
+        height: 300px;
+    }
+
+}
