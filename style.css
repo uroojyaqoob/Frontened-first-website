@@ -162,7 +162,7 @@ a {
 
     overflow: hidden;
 
-    background-image: url("/images/room.bckground.jpeg");
+    background-image: url("images/room.bckground.jpeg");
 
     background-size: cover;
 
